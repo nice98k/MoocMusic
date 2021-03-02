@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.LoginActivity">
+
+    <include  layout="@layout/nav_bar" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/logo"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        />
+    <com.example.imoocmusic.views.InputView
+        android:id="@+id/input_phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/inputViewHeight"
+        android:layout_marginTop="@dimen/marginSize"
+        app:input_icon="@mipmap/phone"
+        app:input_hint="手机号"
+        app:is_password="false"
+
+
+        />
+    <View
+        style="@style/line"
+        >
+
+    </View>
+
+    <com.example.imoocmusic.views.InputView
+        android:id="@+id/input_password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/inputViewHeight"
+
+        app:input_icon="@mipmap/password"
+        app:input_hint="密码"
+        app:is_password="true"
+
+
+        />
+    <View
+        style="@style/line"
+        >
+
+    </View>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/marginSize"
+        android:text="立即注册"
+        android:textSize="@dimen/infoSize"
+        android:textColor="@color/mainColor"
+        android:layout_gravity="center_horizontal"
+        android:onClick="onRegisterClick"
+        >
+
+    </TextView>
+
+    <Button
+        style="@style/commitBtn"
+        android:text="登  陆"
+        android:layout_marginTop="@dimen/marginSize"
+        android:onClick="onCommitClick"/>
+
+
+</LinearLayout>
