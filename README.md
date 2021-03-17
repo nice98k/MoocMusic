@@ -8,4 +8,5 @@
 ###黑胶唱片播放器播放逻辑的实现，通过Glide的transformation背景高斯模糊效果的实现，自定义动画实现播放暂停；
 
 APP 图标
+
 ![](https://github.com/nice98k/MoocMusic/blob/master/APP%E6%88%AA%E5%9B%BE/APP%E5%9B%BE%E6%A0%87.png)
